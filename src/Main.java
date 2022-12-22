@@ -1,33 +1,72 @@
 public class Main {
     public static void main(String[] args) {
-        for (int i = 1; i < 11; i++) {
-            System.out.println(i);
+       // int salary = 15000;
+       // int total = 0;
+      //  int i = 0;
+
+       // while (total < 2_459_000) {
+         //   i++;
+          //  total = total + total / 100;
+          //  total = total + salary;
+           // System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+           // System.out.println(total);
+      //  }
+        int counter = 1;
+        while (counter < 11) {
+            System.out.print(counter + " ");
+            counter++;
+
         }
-            for (int f = 10; f>0; f--){
-                System.out.println(f);
-            }
-            for (int d = 0; d < 17; d+=2 ){
-                System.out.println(d);
-            }
-            for (int g = 10; g > -11; g--)
-            {
-                System.out.println(g);
-            }
-            for (int year = 1904; year < 2096; year +=4){
-                System.out.println(year + "год является високостным");
-            }
-            for (int number = 7; number < 99; number += 7) {
-                System.out.println(number);
-            }
-            for (int number1 = 1; number1 < 513; number1 *= 2){
-                System.out.println(number1);
-            }
-            int salary = 29000;
-            int total = 0;
-            for (int i = 0; i < 12; i++){
-                total = total + total/100;
-                total = total + salary;
+        System.out.println(" ");
+        int one = 10;
+        for (one = 10; one > 0; one--) {
+
+            System.out.print(one + " ");
+
+        }
+        System.out.println(" ");
+        int peopleInCountry = 12000000;
+        int peopleFertility = (peopleInCountry * 17) / 1000;
+        int peopleDeath = (peopleInCountry * 8) / 1000;
+        int year = 0;
+        int peopleInCountryNow = peopleInCountry + peopleFertility - peopleDeath;
+        int peopleGrowthForYear = peopleFertility - peopleDeath;
+        while (year < 10) {
+            year++;
+            peopleInCountry = peopleInCountry + peopleGrowthForYear;
+            peopleInCountry = peopleInCountry + peopleGrowthForYear;
+            System.out.println("Год " + year + " численность населения составляет " + peopleInCountry);
+        }
+        int salary = 15000;
+        int total = 0;
+        int i = 0;
+
+        while (total < 12_000_000) {
+            i++;
+            total = total + total / 70;
+            total = total + salary;
+            if (i % 6 == 0) {
                 System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+                System.out.println(total);
             }
         }
+        int money = 15000;
+        int all = 0;
+        int years = 0;
+        while (years < 118) {
+            years++;
+            all = all + all/70;
+            all = all + money;
+            if (years % 6 ==0) {
+                System.out.println( "Месяц " + years + " Сумма накоплений " + all);
+            }
+        }
+        int friday = 3;
+        while (friday < 32) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необхоимо подготовить отчет.");
+            friday +=7;
+        }
+
     }
+}
+
