@@ -66,7 +66,6 @@ public class Main {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необхоимо подготовить отчет.");
             friday +=7;
         }
-
     }
 }
 
